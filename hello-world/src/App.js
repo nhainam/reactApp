@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Clock from './Clock';
 import Toggle from './Toggle';
+import Conditional from './Conditional';
+import Forms from './Forms';
+import Lists from './Lists';
 import './App.css';
 
 function ActionLink()
@@ -33,6 +36,9 @@ class App extends Component {
         </p>
         <Clock />
         <Toggle />
+        <Conditional />
+        <Lists />
+        <Forms />
       </div>
     );
   }
