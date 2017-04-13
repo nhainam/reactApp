@@ -5,6 +5,8 @@ import Toggle from './Toggle';
 import Conditional from './Conditional';
 import Forms from './Forms';
 import Lists from './Lists';
+import Lifting from './Lifting';
+import Thinking from './Thinking';
 import './App.css';
 
 function ActionLink()
@@ -34,6 +36,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
           <ActionLink />
         </p>
+        <Thinking />
+        <Lifting />
         <Clock />
         <Toggle />
         <Conditional />
