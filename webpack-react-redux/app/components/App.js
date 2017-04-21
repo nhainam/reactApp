@@ -1,19 +1,14 @@
-import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
-import { footer } from '../styles/footer.scss';
+import React from 'react';
+import Footer from './Footer';
+import AddTodo from '../containers/AddTodo';
+import VisibleTodoList from '../containers/VisibleTodoList';
 
-const App = ({ children }) =>
+const App = () => (
     <div>
-        <h1>Filter table</h1>
-        { children }
-        <footer className={footer}>
-            <Link to="/">Filterable Table</Link>
-            <Link to="/about">About</Link>
-        </footer>
-    </div>;
-
-App.propTypes = {
-    children: PropTypes.object
-};
+        <AddTodo/>
+        <VisibleTodoList/>
+        <Footer/>
+    </div>
+);
 
 export default App;
